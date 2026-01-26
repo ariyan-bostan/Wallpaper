@@ -6,6 +6,10 @@ body{
 }
 a{
     text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
 }
 h1{
     margin: 0;
@@ -13,16 +17,33 @@ h1{
 a:visited{
     color:black;
 }
+
+.listSidebar{
+    list-style: none;
+    padding: 0;
+    
+}
+.itemSidebar{
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container{
     height: 100vh;
     display: grid;
     grid-template: auto/100fr;
     grid-template-areas: "header" "sidebar" "main";
     overflow: hidden;
+    background: khaki;
 }
 .header{
     grid-area: header;
-    background: rgba(109, 139, 0, 0.637);
+    /* background: rgba(109, 139, 0, 0.637); */
     border: 1px solid black;
     display: flex;
     flex-direction: row;
@@ -30,7 +51,7 @@ a:visited{
 }
 .sidebar{
     grid-area: sidebar;
-    background: rgba(5, 139, 0, 0.637);
+    /* background: rgba(5, 139, 0, 0.637); */
     border: 1px solid black;
 }
 .listHeader{
@@ -41,7 +62,7 @@ a:visited{
 }
 .main{
     grid-area: main;
-    background: rgba(139, 0, 25, 0.637);
+    /* background: rgba(139, 0, 25, 0.637); */
     border: 1px solid black;
 }
 
@@ -52,10 +73,11 @@ a:visited{
 }
 
 
+
 @media screen and (min-width:1100px) {
     .container{
         
-        grid-template: 50px auto/10fr 88fr;
+        grid-template: 50px auto/8fr 92fr;
         grid-template-areas: "header header" "sidebar main";
     }    
 }
