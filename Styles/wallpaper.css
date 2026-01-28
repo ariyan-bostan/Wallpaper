@@ -21,6 +21,9 @@ a:hover{
     color: rgb(209, 250, 255);
     text-decoration: underline;
 }
+.title{
+    font-size: 1rem;
+}
 .titleImage{
     display: flex;
     flex-direction: row;
