@@ -1,0 +1,14 @@
+label{
+    margin-left: 6px;
+    color: rgb(189, 252, 0);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.linkDownload{
+    font-size: 1rem;
+    color: rgb(6, 237, 160);
+}
+.boxName{
+    display: flex;
+    flex-direction: column;
+}

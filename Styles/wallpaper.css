@@ -23,6 +23,7 @@ a:hover{
 }
 .title{
     font-size: 1rem;
+    margin-left: 5px;
 }
 .titleImage{
     display: flex;
@@ -56,6 +57,7 @@ a:hover{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     width: 2rem;
     margin: .3rem;
     padding: .5rem;
@@ -77,13 +79,13 @@ a:hover{
 
     .container{
         display: grid;
-        grid-template: 25rem/repeat(2,20rem);
+        grid-template: 35rem/repeat(2,20rem);
         justify-content: center;
         gap: 5px;
     }
 
     .box{
-        height: 25rem;
+        height: 35rem;
         width: 20rem;
         background: rgba(0, 56, 54, 0.819);
 
@@ -97,12 +99,12 @@ a:hover{
 
     .container{
         display: grid;
-        grid-template: 20rem/repeat(3,20rem);
+        grid-template: 35rem/repeat(3,20rem);
         justify-content: center;
         gap: 5px;
     }
     .box{
-        height: 20rem;
+        height: 35rem;
         width: 20rem;
         
     }
@@ -111,12 +113,12 @@ a:hover{
 @media screen and (min-width:1400px) {
     .container{
         display: grid;
-        grid-template: 20rem/repeat(4,20rem);
+        grid-template: 35rem/repeat(4,20rem);
         justify-content: center;
         gap: 5px;
     }
     .box{
-        height: 20rem;
+        height: 35rem;
         width: 20rem;
         margin: 0;
     }
