@@ -53,13 +53,13 @@ a:hover{
 .container{
     height: auto;
     display: grid;
-    grid-template: 25rem/20rem;
+    grid-template: 35rem/20rem;
     justify-content: center;
     gap: 5px;
     margin-bottom: 1rem;
 }
 .box{
-    height: 25rem;
+    height: 35rem;
     width: 20rem;
     border-radius: 8px;
     display: flex;
