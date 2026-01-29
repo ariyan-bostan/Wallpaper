@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: capitalize;
+    color: white;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+h1{
+    margin: 0;
+}
+a:visited{
+    color:white;
+}
+
+.listSidebar{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin: 0;
+    border-radius: 5px;
+    
+}
+.itemSidebar{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    
+    
+}
+.itemSidebar:hover{
+    background: seagreen;
+    
+    
+}
+.itemSidebar1{
+    border-right: 1px solid white;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template: 7%  5% auto/100fr;
+    grid-template-areas: "header" "sidebar" "main";
+    overflow: hidden;
+    background: rgba(0, 117, 113, 0.747);
+}
+.header{
+    grid-area: header;
+    /* background: rgba(109, 139, 0, 0.637); */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sidebar{
+    grid-area: sidebar;
+    /* background: rgba(5, 139, 0, 0.637); */
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px
+}
+
+.listHeader{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-right: 1.2rem;
+}
+.main{
+    grid-area: main;
+    /* background: rgba(139, 0, 25, 0.637); */
+    /* border: 1px solid black; */
+}
+
+.pageAbout{
+    width: 100%;
+    height: 100%;
+    border:none;
+}
+
+
+
+@media screen and (min-width:1100px) {
+    .container{
+        
+        grid-template: 50px auto/8fr 92fr;
+        grid-template-areas: "header header" "sidebar main";
+    }  
+    
+    .listSidebar{
+            height: auto;
+
+        
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .itemSidebar{
+        width: 100%;
+        margin: 0;
+        border-bottom: 1px solid white;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
