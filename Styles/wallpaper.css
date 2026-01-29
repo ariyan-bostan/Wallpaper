@@ -1,3 +1,11 @@
+@keyframes imgHover {
+    100%{
+         height: 88%;
+         width: 100%;
+         object-fit: cover;
+    }
+}
+
 body{
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -8,6 +16,13 @@ img{
     height: 85%;
     width: 100%;
     object-fit: cover;
+    overflow: hidden;
+}
+img:hover{
+    animation-name: imgHover;
+    animation-duration: 1s;
+    animation-delay: 1ms;
+   
 }
 a{
     color: rgb(255, 255, 255);
@@ -24,6 +39,9 @@ a:hover{
 .title{
     font-size: 1rem;
     margin-left: 5px;
+}
+.selectCategori{
+    margin-left: 6px;
 }
 .titleImage{
     display: flex;
